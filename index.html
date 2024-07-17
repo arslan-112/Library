@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="header"> Library</div>
+    <div class="new-book">
+        <button id="add-book"> Add Book </button>
+    </div>
+    <div id="content">
+
+    </div>
+    <!-- Modal Dialog -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add a New Book</h2>
+        <form id="book-form">
+            <label for="name">Book Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+            
+            <label for="pages">Pages:</label>
+            <input type="number" id="pages" name="pages" required>
+            
+            <label for="status">Read:</label>
+            <select id="status" name="status" required>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+            </select>
+            
+            <button type="submit">Add Book</button>
+        </form>
+        </div>
+    </div>
+
+    <script src="myscript.js"></script>
+</body>
+</html>
